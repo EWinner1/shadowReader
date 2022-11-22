@@ -7,5 +7,5 @@ This is a fork repository
 * `shadowReader.onlineBookURL`：在线书源，当前已支持笔趣阁
 * `shadowReader.hiddenTime`：自动切换至老板状态时间（单位秒，默认30）
 * `shadowReader.bossStatusMsg`：设置老板状态下显示的静态文本
-* 修改快捷键：首选项 -- 键盘快捷方式
+* 修改快捷键：你可以在 - 首选项 -- 键盘快捷方式
 ![feature X](./images/keybind.jpg)
