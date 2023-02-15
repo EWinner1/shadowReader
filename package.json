@@ -1,5 +1,5 @@
 {
-	"name": "shadow-reader",
+	"name": "shadow-reader-enhance",
 	"displayName": "shadow reader",
 	"description": "摸鱼划水看书，十分隐蔽",
 	"version": "0.8.3",
@@ -11,14 +11,11 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:shadowReader.start"
-	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/EWinner1/shadowReader.git"
 	},
-	"homepage": "https://github.com/igzhang/shadowReader/blob/main/README.md",
+	"homepage": "https://github.com/EWinner1/shadowReader/blob/main/README.md",
 	"main": "./out/extension.js",
 	"contributes": {
 		"configuration": {
