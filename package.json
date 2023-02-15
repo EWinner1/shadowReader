@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/EWinner1/shadowReader/blob/main/README.md",
 	"main": "./out/extension.js",
+	"activationEvents": [],
 	"contributes": {
 		"configuration": {
 			"title": "shadow reader",
