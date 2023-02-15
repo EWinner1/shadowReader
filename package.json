@@ -3,7 +3,7 @@
 	"displayName": "shadow reader",
 	"description": "摸鱼划水看书，十分隐蔽",
 	"version": "0.8.3",
-	"publisher": "EWinner",
+	"publisher": "EWinner1",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -47,7 +47,7 @@
 					"default": 30,
 					"description": "自动隐藏时间"
 				},
-				"shadowReader.bossStatusMsg":{
+				"shadowReader.bossStatusMsg": {
 					"type": "string",
 					"default": "Hello world",
 					"description": "Boss状态默认静态文本"
@@ -85,8 +85,8 @@
 				}
 			]
 		},
-		"capabilities" : {
-			"hoverProvider" : "true"
+		"capabilities": {
+			"hoverProvider": "true"
 		}
 	},
 	"scripts": {
@@ -114,6 +114,8 @@
 		"axios": "^0.21.1",
 		"chardet": "^1.3.0",
 		"cheerio": "^1.0.0-rc.5",
-		"iconv-lite": "^0.6.2"
+		"generator-code": "^1.7.3",
+		"iconv-lite": "^0.6.2",
+		"yo": "^4.3.1"
 	}
 }
