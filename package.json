@@ -2,8 +2,8 @@
 	"name": "shadow-reader",
 	"displayName": "shadow reader",
 	"description": "摸鱼划水看书，十分隐蔽",
-	"version": "0.8.2",
-	"publisher": "rainbroadcast",
+	"version": "0.8.3",
+	"publisher": "EWinner",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -16,7 +16,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/igzhang/shadowReader.git"
+		"url": "https://github.com/EWinner1/shadowReader.git"
 	},
 	"homepage": "https://github.com/igzhang/shadowReader/blob/main/README.md",
 	"main": "./out/extension.js",
@@ -46,6 +46,11 @@
 					"type": "number",
 					"default": 30,
 					"description": "自动隐藏时间"
+				},
+				"shadowReader.bossStatusMsg":{
+					"type": "string",
+					"default": "Hello world",
+					"description": "Boss状态默认静态文本"
 				}
 			}
 		},
