@@ -1,8 +1,8 @@
 {
 	"name": "shadow-reader-enhance",
 	"displayName": "shadow reader enhanced",
-	"description": "摸鱼划水看书，十分隐蔽",
-	"version": "0.8.3",
+	"description": "Boss is coming! 注意隐蔽！",
+	"version": "0.8.4",
 	"publisher": "EWinner1",
 	"engines": {
 		"vscode": "^1.54.0"
@@ -45,7 +45,7 @@
 					"default": 30,
 					"description": "自动隐藏时间"
 				},
-				"shadowReader.bossStatusMsg":{
+				"shadowReader.bossStatusMsg": {
 					"type": "string",
 					"default": "Hello world",
 					"description": "Boss状态默认静态文本"
@@ -93,7 +93,13 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"webpack-prod": "webpack --mode production",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"webpack-dev-config": "webpack --config webpack.config.js --progress"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.3",
@@ -105,15 +111,25 @@
 		"eslint": "^7.19.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.2.1",
-		"typescript": "^4.1.3",
-		"vscode-test": "^1.5.0"
+		"ts-loader": "^9.4.2",
+		"typescript": "^4.9.5",
+		"vscode-test": "^1.5.0",
+		"webpack": "^5.75.0",
+		"webpack-bundle-analyzer": "^4.8.0",
+		"webpack-cli": "^5.0.1"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
 		"chardet": "^1.3.0",
 		"cheerio": "^1.0.0-rc.5",
 		"generator-code": "^1.7.3",
+		"htmlparser2": "^8.0.1",
+		"https-browserify": "^1.0.0",
 		"iconv-lite": "^0.6.2",
+		"path": "^0.12.7",
+		"querystring-es3": "^0.2.1",
+		"stream-http": "^3.2.0",
+		"url": "^0.11.0",
 		"yo": "^4.3.1"
 	}
 }
