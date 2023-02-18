@@ -9,8 +9,10 @@ import { BiquCrawler } from "./crawler/biqu";
 import { CaimoCrawler } from "./crawler/caimo";
 import { BookKind } from "./parse/model";
 
-let bookLibraryDict: object = {};
+type Dict = { [key: string]: any; };
 
+let bookLibraryDict: Dict = {};
+ 
 enum Menu {
     readBook = "开始阅读",
     newBook = "添加新书籍",
@@ -19,8 +21,8 @@ enum Menu {
     newOnlineBook = "网络书籍",
 }
 
-function hasKey<O>(obj: O, key: keyof any): key is keyof O {
-    return key in obj;
+function hasKey(dict: Dict, key: string) {
+    return dict[key];
 }
 
 export async function showMainMenu(context: ExtensionContext) {
