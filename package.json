@@ -1,9 +1,9 @@
 {
-	"name": "shadow-reader",
-	"displayName": "shadow reader",
-	"description": "摸鱼划水看书，十分隐蔽",
-	"version": "0.8.2",
-	"publisher": "rainbroadcast",
+	"name": "shadow-reader-enhance",
+	"displayName": "shadow reader enhanced",
+	"description": "Boss is coming! 注意隐蔽！",
+	"version": "0.8.6",
+	"publisher": "EWinner1",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -11,15 +11,15 @@
 	"categories": [
 		"Other"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EWinner1/shadowReader.git"
+	},
+	"homepage": "https://github.com/EWinner1/shadowReader/blob/main/README.md",
+	"main": "./out/extension.js",
 	"activationEvents": [
 		"onCommand:shadowReader.start"
 	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/igzhang/shadowReader.git"
-	},
-	"homepage": "https://github.com/igzhang/shadowReader/blob/main/README.md",
-	"main": "./out/extension.js",
 	"contributes": {
 		"configuration": {
 			"title": "shadow reader",
@@ -46,6 +46,11 @@
 					"type": "number",
 					"default": 30,
 					"description": "自动隐藏时间"
+				},
+				"shadowReader.bossStatusMsg": {
+					"type": "string",
+					"default": "Hello world",
+					"description": "Boss状态默认静态文本"
 				}
 			}
 		},
@@ -80,8 +85,8 @@
 				}
 			]
 		},
-		"capabilities" : {
-			"hoverProvider" : "true"
+		"capabilities": {
+			"hoverProvider": "true"
 		}
 	},
 	"scripts": {
