@@ -2,7 +2,7 @@
 	"name": "shadow-reader-enhance",
 	"displayName": "shadow reader enhanced",
 	"description": "Boss is coming! 注意隐蔽！",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "EWinner1",
 	"engines": {
 		"vscode": "^1.54.0"
