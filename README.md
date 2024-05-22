@@ -69,10 +69,6 @@ vscode插件市场，搜索`shadow reader enhanced`，安装
 - 笔趣阁在梯子下无法访问（请关闭梯子即可）
 - certificate expire [vscode issue](https://github.com/microsoft/vscode/issues/136787)，可通过禁用vscode证书验证实现![feature X](./images/certificate_expire.png)
 
-## Future Feature
-- 其他格式支持(比如.epub)
-- 其他隐藏显示手段
-
 ## Inspire
 本插件灵感来自于[Thief-Book-VSCode](https://github.com/cteamx/Thief-Book-VSCode)，二者区别：  
 
